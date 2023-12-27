@@ -45,4 +45,7 @@ print(a / b)
 
 name = "邦"
 
-print(name)
+print("姓名： %s" % name)
+print("%d + %d = %d" % (a, b, a + b))
+
+print(f"{a} + {b} = {a+b}")
