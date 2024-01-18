@@ -10,7 +10,7 @@ def hello(name):
 	print(cowsay.cow('Hello, ' + name))
 
 def	goodbye(name):
-	print('Goodbye, ' + name)
+	print(cowsay.cheese( 'Goodbye, ' + name))
 
 if __name__ == '__main__':
 	main()
