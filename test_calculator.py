@@ -1,12 +1,9 @@
 from calculator import square
-def main():
-	test_square()
+import pytest
 
 def test_square():
-	if square(2) != 4:
-		print('square(2) did not return 4')
-	assert square(3) == 91
-
-
-if __name__ == '__main__':
-	main()
+	assert square(1) == 1
+	assert square(2) == 4
+	assert square(3) == 9
+	assert square(4) == 16
+	assert square(5) == 25

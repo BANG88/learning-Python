@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "python.languageServer": "Pylance",
+  "editor.renderWhitespace": "all",
+  "python.testing.unittestArgs": ["-v", "-s", ".", "-p", "test_*.py"],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": ["."]
+}
