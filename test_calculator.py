@@ -1,5 +1,4 @@
 from calculator import square
-import pytest
 
 def test_square():
 	assert square(1) == 1
