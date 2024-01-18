@@ -1,7 +1,10 @@
-import cowsay
 import sys
+from sayings import hello
+
+
+
 
 def main():
-	print(cowsay.tux(sys.argv[1]))
+	hello(sys.argv[1])
 
 main()
