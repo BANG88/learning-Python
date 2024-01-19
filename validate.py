@@ -18,3 +18,9 @@ if regex.match(email):
 	print("Valid email")
 else:
 	print("Invalid email")
+
+
+if(re.search(r"[\w\d\.\+]{1,64}@[\w\d\.\+]{1,255}\.[\w]{2,4}$", email)):
+	print("Valid email")
+else:
+	print("Invalid email")
