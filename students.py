@@ -1,15 +1,20 @@
 import csv
 
-students = []
+name = input("Enter your name: ")
+house = input("Enter your house: ")
+city = input("Enter your city: ")
 
-with open("students.csv") as file:
-	reader = csv.DictReader(file)
-	for row in reader:
-		students.append(row)
+try:
+	with open("students.csv",'a') as file:
+		writer = csv.DictWriter(file, fieldnames=["name", "house", "city"])
+		writer.writerow({
+			"name": name,
+			"house": house,
+			"city": city
+		})
+except Exception as e:
+	print("An error occurred while writing to the file:", str(e))
 
-
-for student in sorted(students, key=lambda student: student["city"]):
-	print(f"{student['name']} is in {student['house']} house and is from {student['city']}")
-
-
+# name,house,city
+	
 
