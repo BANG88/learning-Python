@@ -1,11 +1,6 @@
-def total(galleons,sickles,knuts):
-	return (galleons*17 + sickles)*29 + knuts
+def f(*args,**kwargs):
+	print("Positional: ", args)
+	print("Keyword: ", kwargs)
 
-coins = {
-	"galleons": 100,
-	"sickles": 50,
-	"knuts": 25
-}
-# unpack from coins
-print(total(**coins),"knuts")
 
+f(1, 2, 3, 4, 5,a=2,b=3,c=4,d=5)
