@@ -1,18 +1,13 @@
-class Cat:
-	MEOWS = 3
-
-	def meow(self):
-		for _ in range(self.MEOWS):
-			print("meow")
+def meow(n:int) -> str:
+	return "meow \n" * n
 
 
 
-def main():
-	cat = Cat()
-	cat.meow()
-	
 
+number:int  = int(input("How many times do you want to meow? "))
 
-if __name__ == '__main__':
-	main()
+meow(number)
 
+meows: str = meow(number)
+
+print(meows)
